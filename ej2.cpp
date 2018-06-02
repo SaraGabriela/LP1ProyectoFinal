@@ -2,6 +2,7 @@
 #include <cmath>
 using namespace std;
 
+//bfhrbfkbfkrbkr
 
 float actualizaSaldo(float saldoAnterior, float interesMensual, float pagoMinimoM){
 	float saldoActualizado=saldoAnterior * (1+interesMensual)-pagoMinimoM;
