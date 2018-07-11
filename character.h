@@ -25,7 +25,7 @@ public:
 	string get_name();
 	bool get_choice();
 
-	virtual bool choice1(bool choice_other, int k) = 0; // k is the current time, first , second 
+	virtual void choice1(bool choice_other, int k) = 0; // k is the current time, first , second 
 
 	friend ostream & operator <<(ostream & os, const character & a);
 

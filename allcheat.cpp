@@ -9,9 +9,9 @@ allcheat::~allcheat()
 {
 
 }
-bool allcheat::choice1(bool choice_other, int k)
+void allcheat::choice1(bool choice_other, int k)
 {
-	return false;
+	set_choice(false);
 }
 
 ostream & operator <<(ostream & os, const allcheat & a)

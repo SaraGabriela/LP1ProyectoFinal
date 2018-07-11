@@ -8,12 +8,12 @@ copycat::~copycat()
 {
 
 }
-bool copycat::choice1(bool choice_other, int k)
+void copycat::choice1(bool choice_other, int k)
 {
 	if (k == 1)
-		return true;
+		set_choice(true);
 
-	return choice_other;
+	set_choice(choice_other);
 
 }
 

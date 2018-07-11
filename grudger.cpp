@@ -12,29 +12,25 @@ grudger::~grudger()
 
 
 }
-bool grudger::choice1(bool choice_other, int k)
+void grudger::choice1(bool choice_other, int k)
 {
 	if (k == 1)
 	{
 
-		return true;
+		set_choice(true);
 
 	}
-	if (choice_other == false)
+	if (choice_other == false || cheat == true)
 	{
 
 		cheat = true;
 
-		return false;
+		set_choice(false);
 
 	}
-	if (choice_other == true)
+	else
 	{
-
-		cheat = false;
-
-		return true;
-
+		set_choice(true);
 	}
 
 

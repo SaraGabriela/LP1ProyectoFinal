@@ -9,9 +9,9 @@ allcooperate::~allcooperate()
 {
 
 }
-bool allcooperate::choice1(bool choice_other, int k)
+void allcooperate::choice1(bool choice_other, int k)
 {
-	return true;
+	set_choice(true);
 }
 
 ostream & operator <<(ostream & os, const allcooperate & a)

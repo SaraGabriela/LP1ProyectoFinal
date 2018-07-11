@@ -6,13 +6,13 @@ class grudger : public character
 {
 private:
 
-	bool cheat;
+	bool cheat=false;
 
 
 public:
 	grudger(int _score, string _name, bool _choice);
 	~grudger();
-	bool choice1(bool choice_other, int k);
+	void choice1(bool choice_other, int k);
 
 };
 

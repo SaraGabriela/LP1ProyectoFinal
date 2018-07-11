@@ -24,13 +24,13 @@ void game::playGame(character * c1, character * c2)
 	{
 		c1->set_score(c1->get_score() - 1);
 		c2->set_score(c2->get_score() + 3);
-		cout << "gana 2" << endl;
+		cout << "gana "<< c2->get_name() << endl;
 	}
 	else if (!c1->get_choice() && c2->get_choice())
 	{
 		c1->set_score(c1->get_score() + 3);
 		c2->set_score(c2->get_score() - 1);
-		cout << "gana 1" << endl;
+		cout << "gana "<< c1->get_name() << endl;
 	}
 	else
 	{
