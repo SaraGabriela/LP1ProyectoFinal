@@ -14,7 +14,7 @@ detective::~detective()
 
 void detective::choice1(bool choice_other, int k)
 {
-	
+
 
 	if (k < 5)
 	{
@@ -34,15 +34,15 @@ void detective::choice1(bool choice_other, int k)
 		set_choice(true);
 	}
 	else {
-		if (cheat = false) // Está tomando a cheat como true SIEMPRE. Por arreglar
+		if (cheat == true) 
 		{
 			set_choice(choice_other);
-			cout << "copycat" << endl;
+			//cout << "copycat" << endl;
 		}
 		else
 		{
 			set_choice(false);
-			cout << "allcheat" << endl;
+			//cout << "allcheat" << endl;
 		}
 	}
 }
