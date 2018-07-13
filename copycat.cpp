@@ -14,7 +14,6 @@ void copycat::choice1(bool choice_other, int k)
 		set_choice(true);
 
 	set_choice(choice_other);
-
 }
 
 ostream & operator <<(ostream & os, const copycat & a)

@@ -18,23 +18,23 @@ void game::playGame(character * c1, character * c2)
 	{
 		c1->set_score(c1->get_score() + 2);
 		c2->set_score(c2->get_score() + 2);
-		cout << "ambos ganan" << endl;
+		cout << "*Ambos ganan*" << endl;
 	}
 	else if(c1->get_choice() && !c2->get_choice())
 	{
 		c1->set_score(c1->get_score() - 1);
 		c2->set_score(c2->get_score() + 3);
-		cout << "gana "<< c2->get_name() << endl;
+		cout << "*Gana "<< c2->get_name() <<"*"<< endl;
 	}
 	else if (!c1->get_choice() && c2->get_choice())
 	{
 		c1->set_score(c1->get_score() + 3);
 		c2->set_score(c2->get_score() - 1);
-		cout << "gana "<< c1->get_name() << endl;
+		cout << "*Gana " << c1->get_name() << "*" << endl;
 	}
 	else
 	{
-		cout << "Nadie gana" << endl;
+		cout << "*Nadie gana*" << endl;
 	}
 }
 
